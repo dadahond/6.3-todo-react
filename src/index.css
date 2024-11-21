@@ -1,0 +1,109 @@
+.todo-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(244, 248, 248);
+}
+
+.completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.formTitle {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 100px;
+  color: rgb(6, 157, 157);
+}
+
+.formCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.inputTodo {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgb(182, 210, 182);
+  padding: 10px;
+  font-size: 18px;
+}
+
+.submitButton {
+  border-radius: 5px;
+  border: 1px solid rgb(182, 210, 182);
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  &:hover {
+    background-color: rgb(52, 210, 187);
+  }
+}
+
+.todoTitle {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+#todoItem {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  padding: 0;
+}
+
+.itemButton {
+  border-radius: 6px;
+  border: 1px solid gray;
+  cursor: pointer;
+  padding: 6px 8px;
+  font-size: 14px;
+  &:hover {
+    background-color: rgba(6, 135, 118, 0.409);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .formTitle {
+    margin-bottom: 20px;
+    font-size: 50px;
+  }
+  .inputTodo {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 14px;
+  }
+  .submitButton {
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  .todoTitle {
+    font-size: 16px;
+  }
+  #todoItem {
+    gap: 10px;
+  }
+  .itemButton {
+    padding: 4px 6px;
+    font-size: 10px;
+  }
+  ul {
+    padding: 0;
+  }
+}
